@@ -1,0 +1,46 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "remoteid": "Remote ID",
+          "apiregion": "Region (usually us)",
+          "api_key": "apiKey",
+          "apisecret": "apiSecret",
+          "ip_address": "ipaddr",
+          "deviceid": "device ID",
+          "name": "Name of unit",
+          "userid": "User ID for tuya cloud connection to smarthome",
+          "max_temperature": "Max Temperature Setting for the heatpump",
+          "min_temperature": "Min Temperature for the heatpump",
+          "target_precision": "target_precision",
+          "temperature_step": "temperature_step",
+          "TemperatureUnit":"Temperature Unit"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  },
+  "options": {
+    "step": {
+        "init": {
+            "title": "Heatpump Configuration",
+            "description": "Please select the setup.",
+            "data": {
+                "max_temperature": "Max Temperature Setting for the heatpump",
+                "min_temperature": "Min Temperature for the heatpump",
+                "target_precision": "target_precision",
+                "temperature_step": "temperature_step",
+                "TemperatureUnit":"Temperature Unit"
+            }
+        }
+      }
+    }
+}
